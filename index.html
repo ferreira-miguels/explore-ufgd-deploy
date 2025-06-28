@@ -61,7 +61,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "RE.Conecta",
         productName: "Explore a UFGD",
-        productVersion: "1.0",
+        productVersion: "1.0.1",
         showBanner: unityShowBanner,
       };
 
@@ -122,6 +122,10 @@
 
       document.body.appendChild(script);
 
+    </script>
+    <script type="module">
+      import { inject } from '@vercel/analytics';
+      inject();
     </script>
   </body>
 </html>
