@@ -6,6 +6,12 @@
     <title>Unity Web Player | Explore a UFGD</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+  <meta charset="utf-g">
+  <title>%UNITY_WEB_NAME%</title>
+  
+  <script src="/_vercel/insights/script.js" defer></script>
+  
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -123,9 +129,8 @@
       document.body.appendChild(script);
 
     </script>
-    <script type="module">
-      import { inject } from '@vercel/analytics';
-      inject();
+    <script 
+    src="/_vercel/insights/script.js" defer>
     </script>
   </body>
 </html>
